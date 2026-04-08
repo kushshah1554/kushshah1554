@@ -16,10 +16,10 @@
 
 ---
 
-## 🛠️ Tech Stack
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,cpp,python,git,github,vscode" />
-</p>
+
+<img width="1440" height="1340" alt="image" src="https://github.com/user-attachments/assets/8b32bc82-a767-44d5-9ae3-304bbfce4fe2" />
+
+
 
 ---
 
