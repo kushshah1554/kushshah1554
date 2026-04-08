@@ -1,366 +1,167 @@
-[kush_header_section.html](https://github.com/user-attachments/files/26568856/kush_header_section.html)
-[Uploadi
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Mono:wght@400;500&display=swap');
+<!-- CAPSULE HEADER BANNER -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ef7&height=200&section=header&text=Hi%20👋%20I'm%20Kush&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=💻%20Building%20·%20📚%20Learning%20·%20🚀%20Evolving&descAlignY=58&descSize=18&descColor=d0e4ff&animation=fadeIn" />
+</p>
 
-  .hdr-root {
-    font-family: 'DM Mono', monospace;
-    padding: 2.5rem 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0;
-    position: relative;
-    overflow: hidden;
-  }
+<!-- TYPING ANIMATION -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=DM+Mono&size=22&duration=3000&pause=800&color=4F8EF7&center=true&vCenter=true&multiline=false&width=500&lines=Full-Stack+Developer+%F0%9F%92%BB;React+%7C+Next.js+%7C+Node.js+%7C+TypeScript;Building+cool+things+on+the+web+%F0%9F%9A%80;Always+learning%2C+always+evolving+%E2%9C%A8" alt="Typing SVG" />
+</p>
 
-  .hdr-bg-grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(var(--color-border-tertiary) 1px, transparent 1px),
-      linear-gradient(90deg, var(--color-border-tertiary) 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.5;
-    pointer-events: none;
-  }
+<!-- STATUS BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Available%20for%20Work-4ade80?style=flat-square&labelColor=1a1a2e&color=4ade80" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Focus-Full--Stack%20Dev-4f8ef7?style=flat-square&labelColor=1a1a2e&color=4f8ef7" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Loves-Clean%20Code-a78bfa?style=flat-square&labelColor=1a1a2e&color=a78bfa" />
+</p>
 
-  .hdr-bg-glow {
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px;
-    height: 200px;
-    background: radial-gradient(ellipse, rgba(79,142,247,0.1) 0%, transparent 70%);
-    pointer-events: none;
-  }
+<br/>
 
-  .hdr-badge-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 1.25rem;
-    position: relative;
-    animation: fadeDown 0.5s ease both;
-  }
+<!-- GIF -->
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="360" style="border-radius:12px"/>
+</p>
 
-  .hdr-badge {
-    font-size: 10px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 20px;
-    border: 1px solid rgba(79,142,247,0.35);
-    background: rgba(79,142,247,0.08);
-    color: #4f8ef7;
-    font-family: 'DM Mono', monospace;
-  }
+<br/>
 
-  .hdr-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #4ade80;
-    box-shadow: 0 0 0 3px rgba(74,222,128,0.2);
-    animation: pulse 2s infinite;
-  }
+<!-- QUICK STATS -->
+<!-- <p align="center">
+  <img src="https://img.shields.io/badge/Experience-3%2B%20Years-4f8ef7?style=for-the-badge&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Projects-20%2B%20Built-a78bfa?style=for-the-badge&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Curiosity-Infinite%20%E2%88%9E-34d399?style=for-the-badge&labelColor=0d1117" />
+</p> -->
 
-  .hdr-available {
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #4ade80;
-    font-family: 'DM Mono', monospace;
-  }
-
-  .hdr-name-wrap {
-    position: relative;
-    margin-bottom: 0.4rem;
-    animation: fadeDown 0.55s 0.05s ease both;
-  }
-
-  .hdr-greeting {
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-    color: var(--color-text-secondary);
-    margin: 0 0 4px;
-  }
-
-  .hdr-name {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(42px, 8vw, 72px);
-    font-weight: 800;
-    color: var(--color-text-primary);
-    line-height: 1;
-    letter-spacing: -2px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.15em;
-  }
-
-  .hdr-name-k {
-    color: #4f8ef7;
-    display: inline-block;
-    animation: tiltIn 0.6s 0.1s ease both;
-  }
-
-  .hdr-name-rest {
-    display: inline-block;
-    animation: tiltIn 0.6s 0.15s ease both;
-  }
-
-  .hdr-wave {
-    font-size: 0.7em;
-    display: inline-block;
-    animation: wave 2.5s ease-in-out infinite;
-    transform-origin: 70% 70%;
-    margin-left: 8px;
-  }
-
-  .hdr-tagline {
-    position: relative;
-    margin: 1rem 0 0;
-    animation: fadeDown 0.6s 0.2s ease both;
-  }
-
-  .hdr-tagline-inner {
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-    color: var(--color-text-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .hdr-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-family: 'DM Mono', monospace;
-    border: 1px solid var(--color-border-secondary);
-    background: var(--color-background-secondary);
-    color: var(--color-text-secondary);
-    transition: transform 0.15s, border-color 0.15s;
-    cursor: default;
-  }
-
-  .hdr-pill:hover {
-    transform: translateY(-2px);
-    border-color: var(--pill-accent);
-    color: var(--pill-accent);
-  }
-
-  .hdr-sep {
-    color: var(--color-border-secondary);
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1;
-  }
-
-  .hdr-gif-wrap {
-    position: relative;
-    margin-top: 1.75rem;
-    animation: fadeUp 0.65s 0.3s ease both;
-  }
-
-  .hdr-gif-frame {
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid var(--color-border-tertiary);
-    position: relative;
-    display: inline-block;
-    line-height: 0;
-  }
-
-  .hdr-gif-frame::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 16px;
-    box-shadow: inset 0 0 0 1px rgba(79,142,247,0.15);
-    z-index: 1;
-    pointer-events: none;
-  }
-
-  .hdr-gif-frame img {
-    width: 320px;
-    max-width: 100%;
-    display: block;
-    border-radius: 16px;
-  }
-
-  .hdr-corner {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-color: #4f8ef7;
-    border-style: solid;
-    opacity: 0.6;
-  }
-  .hdr-corner.tl { top: -5px; left: -5px; border-width: 2px 0 0 2px; border-radius: 3px 0 0 0; }
-  .hdr-corner.tr { top: -5px; right: -5px; border-width: 2px 2px 0 0; border-radius: 0 3px 0 0; }
-  .hdr-corner.bl { bottom: -5px; left: -5px; border-width: 0 0 2px 2px; border-radius: 0 0 0 3px; }
-  .hdr-corner.br { bottom: -5px; right: -5px; border-width: 0 2px 2px 0; border-radius: 0 0 3px 0; }
-
-  .hdr-stat-row {
-    display: flex;
-    gap: 12px;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    animation: fadeUp 0.65s 0.35s ease both;
-  }
-
-  .hdr-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid var(--color-border-tertiary);
-    background: var(--color-background-secondary);
-    min-width: 90px;
-    transition: transform 0.15s, border-color 0.15s;
-    cursor: default;
-  }
-
-  .hdr-stat:hover {
-    transform: translateY(-2px);
-    border-color: rgba(79,142,247,0.3);
-  }
-
-  .hdr-stat-num {
-    font-family: 'Syne', sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-    color: #4f8ef7;
-    line-height: 1.1;
-  }
-
-  .hdr-stat-lbl {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-text-tertiary);
-    margin-top: 2px;
-  }
-
-  @keyframes fadeDown {
-    from { opacity: 0; transform: translateY(-12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes tiltIn {
-    from { opacity: 0; transform: skewX(-6deg) translateX(-8px); }
-    to   { opacity: 1; transform: skewX(0) translateX(0); }
-  }
-
-  @keyframes wave {
-    0%, 100% { transform: rotate(0deg); }
-    20%       { transform: rotate(18deg); }
-    40%       { transform: rotate(-8deg); }
-    60%       { transform: rotate(14deg); }
-    80%       { transform: rotate(-4deg); }
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50%       { opacity: 0.3; }
-  }
-</style>
-
-<div class="hdr-root">
-  <div class="hdr-bg-grid"></div>
-  <div class="hdr-bg-glow"></div>
-
-  <div class="hdr-badge-row">
-    <span class="hdr-badge">Full-stack dev</span>
-    <span class="hdr-dot"></span>
-    <span class="hdr-available">available for work</span>
-  </div>
-
-  <div class="hdr-name-wrap">
-    <p class="hdr-greeting">// hello, world —</p>
-    <h1 class="hdr-name">
-      <span>Hi, I'm&nbsp;</span>
-      <span class="hdr-name-k">K</span><span class="hdr-name-rest">ush</span>
-      <span class="hdr-wave">👋</span>
-    </h1>
-  </div>
-
-  <div class="hdr-tagline">
-    <div class="hdr-tagline-inner">
-      <span class="hdr-pill" style="--pill-accent:#4f8ef7;">💻 Building</span>
-      <span class="hdr-sep">·</span>
-      <span class="hdr-pill" style="--pill-accent:#a78bfa;">📚 Learning</span>
-      <span class="hdr-sep">·</span>
-      <span class="hdr-pill" style="--pill-accent:#34d399;">🚀 Evolving</span>
-    </div>
-  </div>
-
-  <div class="hdr-gif-wrap">
-    <div class="hdr-corner tl"></div>
-    <div class="hdr-corner tr"></div>
-    <div class="hdr-corner bl"></div>
-    <div class="hdr-corner br"></div>
-    <div class="hdr-gif-frame">
-      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="coding gif" />
-    </div>
-  </div>
-
-  <div class="hdr-stat-row">
-    <div class="hdr-stat">
-      <span class="hdr-stat-num">3+</span>
-      <span class="hdr-stat-lbl">Yrs exp</span>
-    </div>
-    <div class="hdr-stat">
-      <span class="hdr-stat-num">20+</span>
-      <span class="hdr-stat-lbl">Projects</span>
-    </div>
-    <div class="hdr-stat">
-      <span class="hdr-stat-num">∞</span>
-      <span class="hdr-stat-lbl">Curiosity</span>
-    </div>
-  </div>
-</div>
-ng kush_header_section.html…]()
+<br/>
 
 ---
 
 ## 🌸 About Me
-- 🌱 Currently learning *Web Development + DSA*
-- 💡 Building projects that actually make sense (slowly but surely)
-- 🎯 Goal: Financial independence + strong dev skills 💸
-- ⚡ Fun fact: I fix bugs by accident more than intention 🙂
+
+<table>
+  <tr>
+    <td>🌱</td>
+    <td><strong>Currently Learning</strong></td>
+    <td>Web Development + Data Structures & Algorithms</td>
+  </tr>
+  <tr>
+    <td>💡</td>
+    <td><strong>Building</strong></td>
+    <td>Projects that actually make sense <em>(slowly but surely)</em></td>
+  </tr>
+  <tr>
+    <td>🎯</td>
+    <td><strong>Goal</strong></td>
+    <td>Financial independence + strong dev skills 💸</td>
+  </tr>
+  <tr>
+    <td>⚡</td>
+    <td><strong>Fun Fact</strong></td>
+    <td>I fix bugs by accident more than intention 🙂</td>
+  </tr>
+</table>
+
+<br/>
+
+<p>
+  <img src="https://img.shields.io/badge/📖%20Learning-Web%20Dev%20%2B%20DSA-4f8ef7?style=flat-square&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🔨%20Building-Real%20Projects-a78bfa?style=flat-square&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🎯%20Goal-Financial%20Freedom-34d399?style=flat-square&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/⚡%20Debug%20Style-Accidental%20Genius-f59e0b?style=flat-square&labelColor=0d1117" />
+</p>
+
+```text
+🌱  Learning    →  Web Development + DSA
+💡  Building    →  Projects that actually make sense
+🎯  Goal        →  Financial independence + strong dev skills 💸
+⚡  Fun fact    →  I fix bugs by accident more than intention 🙂
+```
 
 ---
 
+## 🛠️ Tech Stack
 
-<img width="1440" height="1340" alt="image" src="https://github.com/user-attachments/assets/8b32bc82-a767-44d5-9ae3-304bbfce4fe2" />
+**Frontend**
 
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat-square&logo=react&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Tanstack Query](https://img.shields.io/badge/Tanstack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
+![shadcn](https://img.shields.io/badge/shadcn%2Fui-000000?style=flat-square&logo=shadcnui&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white)
+![Tiptap](https://img.shields.io/badge/Tiptap-000000?style=flat-square&logo=tiptap&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
 
+**Backend & APIs**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
+![Apollo](https://img.shields.io/badge/Apollo_Server-311C87?style=flat-square&logo=apollographql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+
+**ORM & Databases**
+
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![Drizzle](https://img.shields.io/badge/Drizzle_ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white)
+
+**AI & DevOps**
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white)
 
 ---
 
+<!-- FOOTER WAVE -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ef7&height=100&section=footer" />
+</p>
+
+---
 
 
 ## 🚀 Current Focus
+
+<p>
+  <img src="https://img.shields.io/badge/✨%20Clean%20Code-Writing%20Better%20Every%20Day-4f8ef7?style=flat-square&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🚀%20Projects-Building%20Real--World%20Apps-a78bfa?style=flat-square&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🧠%20Learning-No%20Rush%2C%20Just%20Growth-34d399?style=flat-square&labelColor=0d1117" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🔥%20Consistency-Even%20on%20Low%20Energy%20Days-f59e0b?style=flat-square&labelColor=0d1117" />
+</p>
+
+<br/>
+
+<br/>
+
 ```text
-✨ Writing cleaner code every day
-🚀 Building real-world projects
-🧠 Learning without rushing the process
-🔥 Staying consistent (even on low-energy days)
+╔══════════════════════════════════════════════════╗
+║              🚀  CURRENT  FOCUS                  ║
+╠══════════════════════════════════════════════════╣
+║  ✨  Writing cleaner code every day              ║
+║  🚀  Building real-world projects                ║
+║  🧠  Learning without rushing the process        ║
+║  🔥  Staying consistent (even on low-energy days)║
+╚══════════════════════════════════════════════════╝
+```
